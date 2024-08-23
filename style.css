@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 #ex1 {
     background-color: purple;
     width: 60%;
