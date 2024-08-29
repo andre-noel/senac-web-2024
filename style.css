@@ -1,17 +1,67 @@
 * {
+    /* CSS reset */
+    margin: 0;
+    padding: 0;
+
+    /* Para considerar o tamanho do elemento sem o tamanho das margens */
     box-sizing: border-box;
 }
 
-#ex1 {
-    background-color: purple;
-    width: 60%;
-    height: 300px;
+body {
+    font-size: 18px;
 }
 
-#ex1 > div {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    border: 1px solid black;
-    background-color: gold;
+h1, h2, p, li {
+    margin-bottom: 10px;
 }
+
+li {
+    margin-left: 30px;
+}
+
+header {
+    padding: 50px;
+    background-color: darkblue;
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+    background-color: khaki;
+    margin: 20px 50px;
+    border-width: 5px;
+    border-color: red;
+    border-style: dotted;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+}
+
+img {
+    max-width: 500px;
+}
+
+body {
+    background-color: moccasin;
+}
+
+h1, h2 {
+    color:brown;
+}
+
+.subtitulo {
+    font-size: 1.5rem;
+}
+

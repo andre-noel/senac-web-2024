@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, p {
+    margin-bottom: 10px;
+}
+
+li {
+    list-style: none;
+}
+header {
+    background-image: url(imagens/palace-praia-hotel.jpg);
+    height: 100dvh;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    text-shadow: 2px 2px 2px black;
+    padding: 20px 50px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+header p {
+    display: none;
+}
+
+nav {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    padding: 0 50px;
+    opacity: 0.7;
+}
+
+nav ul {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section {
+    width: 50%;
+    padding: 40px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+aside {
+    width: 280px;
+    padding: 40px
+}
+
+footer {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.propaganda {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 30px 0; 
+}
+
+.fotos {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.fotos img {
+    width: 50%;
+    border: 1px solid grey;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    main section, aside {
+        width: 100%;
+    }
+}
