@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="envio.html" method="post">
+        <p>
+            <label for="nome">Nome:</label>
+            <input name="nome" id="nome" type="text" required placeholder="Digite seu nome" maxlength="50" />
+        </p>
+        <p>
+            <label for="senha">Senha:</label>
+            <input name="senha" id="senha" type="password" />
+        </p>
+        <p>
+            <label for="email">e-mail:</label>
+            <input name="email" id="email" type="email" />
+        </p>
+        <p>
+            <label for="idade">Idade:</label>
+            <input name="idade" id="idade" type="number" />
+        </p>
+        <p>
+            <input type="checkbox" name="concordo" id="concordo" value="sim">
+            <label for="concordo">Eu concordo com os termos da licença</label>
+        </p>
+        <p>
+            <input type="checkbox" name="concordo2" id="concordo2" value="pix">
+            <label for="concordo2">Eu concordo em mandar um pix para o meu professor</label>
+        </p>
+        <p>
+            Você gosta de bolo de cenoura?
+            <input type="radio" name="cenoura" value="sim" id="cenoura-sim"> <label for="cenoura-sim">sim</label>
+            <input type="radio" name="cenoura" value="não" id="cenoura-nao"> <label for="cenoura-nao">não</label>
+        </p>
+        <p>
+            <label for="obs">Observações:</label>
+            <textarea name="obs" id="obs" cols="80" rows="10"></textarea>
+        </p>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
