@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="num1">
+    <input type="number" name="" id="num2">
+    <button id="botaoSoma">Somar</button>
+    <button id="botaoSub">Subtrair</button>
+    <button id="botaoMul">Multiplicar</button>
+    <button id="botaoDiv">Dividir</button>
+    <p id="resultado"></p>
+    <script>
+        const num1 = document.querySelector("#num1");
+        const num2 = document.querySelector("#num2");
+        const resultado = document.querySelector("#resultado");
+        const botaoSoma = document.querySelector("#botaoSoma");
+
+        botaoSoma.addEventListener("click", function () {
+            resultado.innerHTML = parseInt(num1.value) + parseInt(num2.value);
+        });
+
+        // Para casa:
+        // Fazer subtração, multiplicação e divisão...
+    </script>
+</body>
+</html>
