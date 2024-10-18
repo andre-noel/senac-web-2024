@@ -1,0 +1,20 @@
+input, button, #resultado {
+    font-size: 2rem;
+}
+
+input {
+    width: 150px;
+}
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+.botoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout {
+    display: flex;
+}
