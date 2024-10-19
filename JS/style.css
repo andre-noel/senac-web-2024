@@ -1,20 +1,38 @@
-input, button, #resultado {
-    font-size: 2rem;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-input {
-    width: 150px;
-}
-button {
-    width: 100px;
-    height: 100px;
+main {
+    border: 1px solid black;
+    width: 500px;
+    margin: 50px;
+    padding: 20px;
     border-radius: 10px;
 }
-.botoes {
+
+.painel {
+    border: 1px solid black;
+    background-color: mediumpurple;
+    height: 100px;
+    color: white;
+    font-size: 5rem;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 50px;
 }
 
-.layout {
+.botoes {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+    margin-top: 30px;
+}
+.botoes button {
+    font-size: 3rem;
+    width: 100px;
+    height: 100px;
 }
