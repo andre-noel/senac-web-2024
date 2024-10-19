@@ -1,0 +1,13 @@
+#resposta {
+    width: 80%;
+    height: 500px;
+    border: 2px dashed #999;
+    border-radius: 15px;
+    margin: 50px auto;
+}
+
+.destaque {
+    background-color: yellow;
+    border-color: red !important;
+    color: blue;
+}
