@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 table {
     border: 0;
     border-collapse: collapse;
+    margin: 30px auto;
 }
 
 td {
@@ -13,4 +15,10 @@ td {
     border: 2px solid black;
     font-size: 3rem;
     text-align: center;
+}
+
+.destaque {
+    color: red;
+    background-color: lemonchiffon;
+    transition: all 0.5s;
 }

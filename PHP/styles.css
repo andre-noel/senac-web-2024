@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.pergunta {
+  display: flex;
+  background-color: #030687;
+  border-right: 7px solid #787ad5;
+  height: 100dvh;
+  width: 50%;
+  flex-direction: column;
+}
+
+.box {
+  border: 4px solid #fc0;
+  background-color: #c12e03;
+  color: white;
+  font-weight: 700;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.enunciado {
+  width: 120%;
+  margin-left: -10%;
+  padding-left: 15%;
+  padding-right: 5px;
+}
+
+.alternativas li {
+  list-style: none;
+}
+
+.alternativas li::before {
+  content: counter(list-item);
+  color: #000080;
+  margin-right: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 5px 12px;
+  font-family: "B612 Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.selecionada {
+  background-color: aquamarine;
+  color: black;
+}
+
+.pontuacao, .pontuacaoLabel {
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pontuacaoLabel {
+  margin-top: 0;
+}
+
+.pontuacao .box,
+.pontuacaoLabel div {
+  width: 150px;
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#btnPerguntar {
+  visibility: hidden;
+}
