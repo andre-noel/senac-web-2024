@@ -1,3 +1,29 @@
+<?php
+$perguntas = [
+    [
+        "pergunta" => "Quem descobriu o Brasil?",
+        "alternativas" => [
+            "Pedro",
+            "João",
+            "Emengardo",
+            "Apolo"
+        ],
+        "correta" => "Pedro"
+    ],
+    [
+        "pergunta" => "Quem descobriu a América?",
+        "alternativas" => [
+            "Pedro",
+            "João",
+            "Emengardo",
+            "Colombo"
+        ],
+        "correta" => "Colombo"
+    ],
+];
+
+$numPergunta = rand(0, count($perguntas) - 1);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,14 +41,15 @@
 
 <body>
     <section class="pergunta">
-        <div class="box enunciado">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere nam tenetur,
-            necessitatibus veniam sint neque vel enim exercitationem architecto expedita quas saepe molestias ipsa velit
-            ea quidem, doloribus, unde deserunt.</div>
+        <div class="box enunciado"><?php echo $perguntas[$numPergunta]["pergunta"]; ?></div>
         <ul class="alternativas">
-            <li class="box alternativa1">Quid</li>
-            <li class="box alternativa2">Latine</li>
-            <li class="box alternativa3">Dictum</li>
-            <li class="box alternativa4">Frango</li>
+            <?php
+            for ($i = 0; $i < 4; $i++) {
+                echo "<li class=\"box alternativa" . ($i + 1) . "\">";
+                echo $perguntas[$numPergunta]["alternativas"][$i];
+                echo "</li>";
+            }
+            ?>
         </ul>
         <button class="box" id="btnPerguntar">Pode perguntar?</button>
         <div class="pontuacao">
