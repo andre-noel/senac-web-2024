@@ -20,7 +20,10 @@ alts.forEach((box) => {
     });
 });
 
-botao.addEventListener('click', () => {
+botao.addEventListener('click', (event) => {
     // Colocar o comportamento ao responder
-
+    event.preventDefault();
+    const form = document.querySelector('form');
+    form.selecionada.value = document.querySelector('.selecionada').innerHTML;
+    form.submit();
 });

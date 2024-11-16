@@ -1,0 +1,245 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Animais",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Quantos meses até que uma baleia grávida dê à luz?",
+            "correct_answer": "16 meses",
+            "incorrect_answers": [
+                "12 meses",
+                "8 meses",
+                "5 meses"
+            ]
+        },
+        {
+            "category": "Conhecimentos gerais",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Um anel tem 3 pedras preciosas. Quantas pedras preciosas têm 11 anéis?",
+            "correct_answer": "33",
+            "incorrect_answers": [
+                "110",
+                "333",
+                "30"
+            ]
+        },
+        {
+            "category": "Conhecimentos gerais",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Em que país foi construído o Muro de Berlim?",
+            "correct_answer": "Alemanha",
+            "incorrect_answers": [
+                "China",
+                "Coreia do Norte",
+                "Estados Unidos"
+            ]
+        },
+        {
+            "category": "Mitologia",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Na mitologia grega quem era o Deus do vinho?",
+            "correct_answer": "Dionísio",
+            "incorrect_answers": [
+                "Baco",
+                "Efésio",
+                "Deméter"
+            ]
+        },
+        {
+            "category": "Ciência e natureza",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Quantos continentes existem?",
+            "correct_answer": "6",
+            "incorrect_answers": [
+                "5",
+                "1",
+                "3"
+            ]
+        },
+        {
+            "category": "Entretenimento: Videogame",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Super Mário World foi lançado em que ano?",
+            "correct_answer": "1990",
+            "incorrect_answers": [
+                "1993",
+                "1985",
+                "1979"
+            ]
+        },
+        {
+            "category": "Ciência: Computadores",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Qual serviço de e-mail pertence à Microsoft?",
+            "correct_answer": "Outlook",
+            "incorrect_answers": [
+                "Yahoo Mail",
+                "Gmail",
+                "iCloud Mail"
+            ]
+        },
+        {
+            "category": "História",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "O que representam os cinco anéis olímpicos?",
+            "correct_answer": "As partes do mundo unidas pelo Olimpismo",
+            "incorrect_answers": [
+                "As argolas da ginástica artística",
+                "Cinco tipos de esporte: de rede, de campo, de combate, de precisão, de invasão.",
+                "Cinco deuses do Olimpo: Zeus, Atena, Apolo, Dionísio e Hermes"
+            ]
+        },
+        {
+            "category": "Entretenimento: Músicas",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "O que significa o termo “piano”?",
+            "correct_answer": "Execução suave",
+            "incorrect_answers": [
+                "Em ritmo acelerado",
+                "Moderadamente lento",
+                "Em ritmo rápido"
+            ]
+        },
+        {
+            "category": "Esportes",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Por qual país David Beckham jogou?",
+            "correct_answer": "Inglaterra",
+            "incorrect_answers": [
+                "Espanha",
+                "EUA",
+                "Brasil"
+            ]
+        },
+        {
+            "category": "Entretenimento: Cartoon e animações",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Qual desses desenhos é uma obra nacional?",
+            "correct_answer": "Irmão do Jorel",
+            "incorrect_answers": [
+                "Samurai Jack",
+                "A Vaca e o Frango",
+                "O Laboratório de Dexter"
+            ]
+        },
+        {
+            "category": "Veículos",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Qual nome do primeiro carro elétrico ?",
+            "correct_answer": "Jamais Content",
+            "incorrect_answers": [
+                "Gurgel Itaipu",
+                "Caoa",
+                "Tesla Model 3"
+            ]
+        },
+        {
+            "category": "Ciência: Matemática",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Qual é a sequência de Fibonacci ?",
+            "correct_answer": "1,2,3,5,8,13",
+            "incorrect_answers": [
+                "0,1,2,3,4,5",
+                "1,3,5,7,9,11",
+                "1,2,3,6,12,24"
+            ]
+        },
+        {
+            "category": "Arte",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Quem pintou o quadro 'Noite Estrelada'?",
+            "correct_answer": "Van Gogh",
+            "incorrect_answers": [
+                "Leonardo Da Vinci",
+                "Picasso",
+                "Michelangelo"
+            ]
+        },
+        {
+            "category": "Ciência e natureza",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Quanto tempo a Terra demora para dar uma volta completa em torno dela mesma?",
+            "correct_answer": "Aproximadamente 24 horas",
+            "incorrect_answers": [
+                "365 dias",
+                "7 dias",
+                "30 ou 31 dias"
+            ]
+        },
+        {
+            "category": "Geografia",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "A cidade Belém/PA fica em qual região do Brasil?",
+            "correct_answer": "Norte",
+            "incorrect_answers": [
+                "Sudeste",
+                "Nordeste",
+                "Centro-Oeste"
+            ]
+        },
+        {
+            "category": "Conhecimentos gerais",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Qual a especialidade do otorrinolaringologista?",
+            "correct_answer": "Tratamento das doenças relacionadas a nariz, ouvido e garganta",
+            "incorrect_answers": [
+                "Tratamento das doenças bucais",
+                "Tratamento das doenças infantis",
+                "Tratamento das doenças da pele"
+            ]
+        },
+        {
+            "category": "Entretenimento: Livros",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Quem escreveu um famoso diário enquanto se escondia dos nazistas em Amsterdã?",
+            "correct_answer": "Anne Frank",
+            "incorrect_answers": [
+                "Bridget Jones",
+                "Marie Curie",
+                "Helen Keller"
+            ]
+        },
+        {
+            "category": "História",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Que grande evento histórico aconteceu em 1822 no Brasil?",
+            "correct_answer": "Independência do Brasil",
+            "incorrect_answers": [
+                "Descobrimento do Brasil",
+                "Construção de Brasília",
+                "Ditadura Militar"
+            ]
+        },
+        {
+            "category": "Conhecimentos gerais",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Quem foi o criador do Bitcoin",
+            "correct_answer": "Satoshi Nakamoto",
+            "incorrect_answers": [
+                "Masashi Kishimoto",
+                "Elon Musk",
+                "Han Solo"
+            ]
+        }
+    ]
+}

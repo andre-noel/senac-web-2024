@@ -1,28 +1,25 @@
 <?php
-$perguntas = [
-    [
-        "pergunta" => "Quem descobriu o Brasil?",
-        "alternativas" => [
-            "Pedro",
-            "João",
-            "Emengardo",
-            "Apolo"
-        ],
-        "correta" => "Pedro"
-    ],
-    [
-        "pergunta" => "Quem descobriu a América?",
-        "alternativas" => [
-            "Pedro",
-            "João",
-            "Emengardo",
-            "Colombo"
-        ],
-        "correta" => "Colombo"
-    ],
-];
+// conecta no banco de dados
+$pdo = new PDO("mysql:dbname=trivia;host=localhost", "root", "");
 
-$numPergunta = rand(0, count($perguntas) - 1);
+// cria a sql para recuperar uma pergunta, sem trazer a resposta correta
+$sql = "select id, enunciado, alternativa1, alternativa2, alternativa3, alternativa4 from pergunta order by rand() limit 1";
+
+// Executa a consulta
+$resultado = $pdo->query($sql);
+
+// Criando variáveis para facilitar
+$linha = $resultado->fetch(PDO::FETCH_ASSOC);
+$enunciado = $linha['enunciado'];
+$alternativas[] = $linha['alternativa1'];
+$alternativas[] = $linha['alternativa2'];
+$alternativas[] = $linha['alternativa3'];
+$alternativas[] = $linha['alternativa4'];
+$id = $linha['id'];
+
+// Embaralha alternativas
+shuffle($alternativas);
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -41,17 +38,21 @@ $numPergunta = rand(0, count($perguntas) - 1);
 
 <body>
     <section class="pergunta">
-        <div class="box enunciado"><?php echo $perguntas[$numPergunta]["pergunta"]; ?></div>
+        <div class="box enunciado"><?php echo $enunciado; ?></div>
         <ul class="alternativas">
             <?php
             for ($i = 0; $i < 4; $i++) {
                 echo "<li class=\"box alternativa" . ($i + 1) . "\">";
-                echo $perguntas[$numPergunta]["alternativas"][$i];
+                echo $alternativas[$i];
                 echo "</li>";
             }
             ?>
         </ul>
-        <button class="box" id="btnPerguntar">Pode perguntar?</button>
+        <form method="post" action="./confere.php">
+            <input type="hidden" name="id_pergunta" value="<?php echo $id; ?>" />
+            <input type="hidden" id="selecionada" name="selecionada" value="" />
+            <button class="box" type="submit" id="btnPerguntar">Pode perguntar?</button>
+        </form>
         <div class="pontuacao">
             <div class="box errar"></div>
             <div class="box parar"></div>
